@@ -4,10 +4,6 @@ FROM golang:1.18 as builder
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
-# Copy go mod and sum files
-COPY go.* ./
-RUN go mod download
-
 # Copy the Go files
 COPY consulz.go ./
 COPY consulz_test.go ./
