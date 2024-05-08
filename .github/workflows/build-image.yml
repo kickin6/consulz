@@ -29,4 +29,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ghcr.io/${{ github.repository }}/amazon-reviewer:latest
+        tags: |
+          ghcr.io/${{ github.repository }}/yourimagename:main
+          ghcr.io/${{ github.repository }}/yourimagename:latest
